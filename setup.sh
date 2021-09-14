@@ -4,7 +4,7 @@
 sudo apt update
 sudo apt upgrade
 
-echo Do you want to install Java JRE and JDK (y/n)?
+echo "Do you want to install Java JRE and JDK (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -13,7 +13,7 @@ sudo apt install default-jre
 sudo apt install default-jdk
 fi
 
-echo Do you want to install Maven (y/n)?
+echo "Do you want to install Maven (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -21,7 +21,7 @@ then
 sudo apt install maven
 fi
 
-echo Do you want to install Slack (y/n)?
+echo "Do you want to install Slack (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -29,7 +29,7 @@ then
 sudo snap install slack --classic
 fi
 
-echo Do you want to install Zoom (y/n)?
+echo "Do you want to install Zoom (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -38,7 +38,7 @@ sudo wget https://zoom.us/client/latest/zoom_amd64.deb
 sudo apt install ./zoom_amd64.deb
 fi
 
-echo Do you want to install git (y/n)?
+echo "Do you want to install git (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -46,7 +46,7 @@ then
 sudo apt install git
 fi
 
-echo Do you want to install Intell Ultimate IDE (y/n)?
+echo "Do you want to install Intell Ultimate IDE (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -54,7 +54,7 @@ then
 sudo snap install intellij-idea-ultimate --classic
 fi
 
-echo Do you want to install Chrome (y/n)?
+echo "Do you want to install Chrome (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
@@ -63,7 +63,7 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 fi
 
-echo Do you want to install OWASP ZAP (y/n)?
+echo "Do you want to install OWASP ZAP (y/n)?"
 read ans
 if [ "n" != $ans ]
 then
