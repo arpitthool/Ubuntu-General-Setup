@@ -63,6 +63,14 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome-stable_current_amd64.deb
 fi
 
+echo "Do you want to install VLC (y/n)?"
+read ans
+if [ "n" != $ans ]
+then
+# install VLC
+sudo snap install VLC
+fi
+
 echo "Do you want to install OWASP ZAP (y/n)?"
 read ans
 if [ "n" != $ans ]
