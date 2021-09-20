@@ -70,6 +70,13 @@ then
 # install VLC
 sudo snap install VLC
 fi
+echo "Do you want to install docker (y/n)?"
+read ans
+if [ "n" != $ans ]
+then
+# install docker
+sudo snap install docker
+fi
 
 echo "Do you want to install OWASP ZAP (y/n)?"
 read ans
